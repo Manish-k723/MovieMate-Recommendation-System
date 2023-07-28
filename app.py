@@ -24,7 +24,7 @@ def recommend(movie):
         posters.append(fetch_poster(movie_id))
     return recommended_movies, posters
 
-movies_list = pickle.load(open('movies.pkl','rb'))
+movies_list = joblib.load('movies.joblib')
 movie = movies_list['title'].values
 new_df = pd.DataFrame(movies_list)
 similarity = joblib.load('similarity.joblib')
