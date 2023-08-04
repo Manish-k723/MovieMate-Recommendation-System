@@ -3,6 +3,10 @@ import pandas as pd
 import requests
 import joblib
 
+st.set_page_config(
+    page_title="MovieMate",
+    page_icon="🚀"
+)
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=2263e44adaef79b4d8934492766385dc&language=en-US".format(movie_id)
     data = requests.get(url)
@@ -30,7 +34,7 @@ similarity = joblib.load('similarity.joblib')
 
 
 st.title('Movie Recommender System')
-
+st.write("<p style='font-size:small;margin-left:5px;margin-top:-5px;margin-bottom:-5px;'>From  <a style='text-decoration:none;' href='https://www.linkedin.com/in/manish-kumar-244a55202/'>Manish</a></p>", unsafe_allow_html=True)
 selected_movie_name = st.selectbox(
     "What's your Mood?",
     movie)
