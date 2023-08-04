@@ -2,6 +2,3 @@ streamlit
 joblib
 pandas
 requests
-pandas == 2.0.3
-joblib 
-pip == 23.2.1
