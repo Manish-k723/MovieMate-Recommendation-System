@@ -10,6 +10,7 @@ Use
 #### streamlit run app.py 
 to run the code:
 You will be prompted to enter your favorite movie.
+
 Access the demo from here: https://moviemate-recommendation-system.streamlit.app/
 ![image](https://github.com/Manish-k723/MovieMate-Recommendation-System/assets/109733755/58e02891-f47a-4213-82f0-a19bccef2054)
 
